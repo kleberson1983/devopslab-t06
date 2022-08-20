@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from app import app
-from flask_wtf.csrf import CSRFProtect
 import unittest
 
 class Test(unittest.TestCase):
@@ -17,4 +16,4 @@ class Test(unittest.TestCase):
 
     def test_conteudo(self):
         # verifica o retorno do conteudo da pagina
-        self.assertEqual(self.result.data.decode('utf-8'), "Hello World - Desafio completo")
+        self.assertEqual(self.result.data.decode('utf-8'), "Laboratório Pipeline DevOps")
